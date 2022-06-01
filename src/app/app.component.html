@@ -1,0 +1,5 @@
+<app-book-list *ngIf="viewState === 'list'"
+ (showDetailsEvent)="showDetails($event)"></app-book-list>
+
+<app-book-details *ngIf="viewState === 'details'"
+(showListEvent)="showList()" [book]="book"></app-book-details>
